@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --monospace:monospace;
+    --sans-serif:sans-serif;
+    --px17:17px;
+    --roboto: 'Roboto', sans-serif;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    top: 0px;
+    left: 0px;
+}
+
+/* .logo {
+    margin-top: 12px;
+    margin-left: 50px;
+} */
+
+.logo-img {
+    width: 6%;
+    border: 2px solid black;
+    border-radius: 100px;
+}
+
+#navbar ul {
+    display: flex;
+    margin: 0;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 18px;
+    /* margin-left: 10px ;
+    margin-right: 10px; */
+    padding: 6px;
+}
+
+#navbar ul li:hover{
+    background-color: black;
+    border-radius: 4px;
+    color:white;
+
+}
+#navbar ul li a {
+    text-decoration: none;
+    display: block;
+    color:black;
+    font-family: var(--roboto);
+    font-weight: bold;
+    padding: 0px 22px 0px 22px;
+}
+
+#navbar ul li a:hover{
+
+    color:white;
+}
+#home {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column;
+}
+#home::before {
+    content: '';
+    background: url('../img/img1.jpg') no-repeat center center/cover;
+    position: absolute;
+    opacity: 0.5;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+#home p{
+    margin-left: 220px;
+    margin-right: 220px;
+    text-align: center;
+    word-spacing: 4px;
+    font-weight: 600;
+}
+#about-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.sub-abt-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 430px;
+}
+#about-img {
+    width: 50%;
+}
+
+#about-img img {
+    height: 400px;
+    width: 80%;
+    border-radius: 12px;
+
+}
+.abt-content {
+    width: 45%;
+}
+.SubCourse1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.SubCourse1 .box{
+    border: 2px solid brown;
+    margin: 4px;
+    width: 300px;
+    border-radius: 12px;   
+}
+.box img{
+    height: 200px;
+    width: 290px;
+    margin-left: 4px;
+    margin-top: 2px;
+    border-radius: 12px;
+}
+.box p{
+    text-align: center;
+    padding-top: 10px;
+    font-family: var(--sans-serif);
+    font-size: var(--px17);
+}
+.box h2{
+    margin: 8px 0px 8px 0px;
+    font-size: var(--px17);
+    font-family: var(--sans-serif);
+    text-align: center;
+}
+#Services{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.sub-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 430px;
+    margin-top: 100px;
+}
+.sub-services img{
+    height: 400px;
+    width: 40%;
+    border-radius: 12px;
+}
+.services-content{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 430px;
+    margin-top: 100px;
+    flex-direction: column;
+    width: 45%;
+}
+.service-course{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.contact-box form{
+    width: 50%;
+}
+.contact-box label{
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif ;
+    padding-left: 10px;
+}
+.contact-box input[type='text'],
+input[type='email']{
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border-radius: 16px;
+    /* border: 2px solid black; */
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: gainsboro;
+
+}
+textarea{
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border-radius: 16px;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: gainsboro;
+    border: none;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   
+}
+.submit-btn{
+    width: 20%;
+    padding: 16px;
+    background-color: darkgreen;
+    border-radius: 16px;
+    color: white;
+    font-weight: bold;
+    border: none;
+   
+}
+#maincourse{
+    display: grid;
+    grid-template-columns: 570px 570px;
+    align-items: center;
+    justify-content: center;
+}
+.sub-maincourse{
+    display: flex;
+    border: 2px solid brown;
+    margin: 20px;
+    height: 200px;
+    border-radius: 8px;
+    
+}
+.sub-maincourse:nth-child(5){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.maincourse-img{
+    display: contents;
+    width: 50%;
+}
+.maincourse-img img{
+    width: 50%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+/*Utility Css*/
+.text-center {
+    text-align: center;
+    margin-top: 20px;
+}
+.para{
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 26px;
+    /* text-align: center; */
+    padding: 0px 10px 0px 10px;
+    word-spacing: 4px;
+}
+.para2{
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 6px;
+    /* text-align: center; */
+    padding: 0px 10px 0px 10px;
+    word-spacing: 4px;
+}
+.h-primary {
+    color: black;
+    font-size: 3rem;
+    font-family: var(--monospace);
+    font-weight: 800;
+}
+.box .h-secondary {
+    margin: 8px 0px 8px 0px;
+    font-size: var(--px17);
+    font-family: var(--sans-serif);
+    text-align: center;
+}
+.h-secondary {
+    margin: 8px 0px 8px 0px;
+    font-size: var(--px17);
+    font-family: var(--sans-serif);
+    text-align: center;
+}
+.h-tertiary{
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif ;
+    padding: 10px;
+    text-align: center;
+}
+/*Table css*/
+.table-container{
+    margin: 5px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    background-color:aliceblue;
+    margin-top: 20px;
+}
+table tr th{
+    border: 2px solid black;
+    padding: 12px;
+}
+table tr{
+    text-align: center;
+    border: 1px solid gray;
+}
+table tr td{
+    padding: 12px;
+}
+tbody tr td{
+    border: 2px solid black;
+}
+/* Css for Responsiveness  */
+
+@media only screen and (min-width:300px) and (max-width:900px){
+    #home h1{
+        text-align: center;
+        font-size: 36px;
+    }
+    #home p{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #about-container, #Services{
+        height: 100vh;
+    }
+    .sub-abt-container, .sub-services{
+        flex-direction: column;
+    }
+    #about-img img{
+        width: 300px;
+        margin-left: -55px;
+    }
+    #abt-content, .services-content{
+        width: 100%;
+        text-align: center;
+        margin-left: 40px;
+    }
+
+    #SubCourse1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #courses{
+        margin-right: 20px;
+    }
+    #card{
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    #maincourse{
+        grid-template-columns:  420px;
+    }
+    #Services{
+        height: 100vh;
+    }
+    .services-content{
+        margin-top: 0px;
+    }
+    #contact{
+        margin-top: 260px;
+    }
+    #contact h1{
+        margin-bottom: 100px;
+    }
+    .contact-box{
+        height: 100vh;
+    }    
+    .contact-box form{
+        width: 80%;
+    }
+}
+
+/*
+@media only screen and (min-width:300px) and (max-width:700px){
+    #about-container{
+        height: 90vh;
+    }
+    .sub-abt-container, .sub-services {
+        flex-direction: column;
+        height: 350px;
+    }
+    #courses{
+        margin-top: -100px;
+    }
+    #about-img,#about-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #abt-content,.services-content{
+        width: 100%;
+    }
+    .h-primary{
+    color: black;
+    font-size: 2.5rem;
+    font-family: var(--monospace);
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20px;
+    } 
+    .para{
+        font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 26px;
+    padding: 0px 50px 0px 50px;
+    word-spacing: 4px;
+    text-align: center;
+    }
+
+}
+*/
