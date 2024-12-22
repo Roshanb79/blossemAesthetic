@@ -206,7 +206,8 @@
     <section id="contact">
         <h1 class="h-primary text-center">Contact Us</h1>
         <div class="contact-box">
-            <form action="<?php echo htmlspecialchars('connect.php');?>" method="post">
+            <form action="" method="post">
+                <!-- <form action="<?php echo htmlspecialchars('connect.php');?>" method="post"> -->
                 <label for="name">Name</label>
                 <input type="text" name="name" placeholder="Enter your name" required>
                 <label for="Phone">Phone no</label>
